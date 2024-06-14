@@ -23,7 +23,7 @@ const MovieItem: React.FC<MovieItemProps> = React.memo(({ movie, onEdit, onDelet
                 onChange={handleChange}
                 className="me-2"
             />
-            <Button variant="danger" onClick={() => onDelete(movie.id)}>Удалить</Button>
+            <Button variant="danger" onClick={() => onDelete(movie.id)}>Delete</Button>
         </div>
     );
 });

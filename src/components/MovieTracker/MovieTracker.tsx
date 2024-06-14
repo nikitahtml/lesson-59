@@ -41,12 +41,12 @@ const MovieTracker: React.FC = () => {
                         type="text"
                         value={newMovie}
                         onChange={(e) => setNewMovie(e.target.value)}
-                        placeholder="Введите название фильма"
+                        placeholder="Enter movie name"
                         className="me-2"
                     />
                 </Col>
                 <Col>
-                    <Button variant="primary" onClick={addMovie}>Добавить</Button>
+                    <Button variant="primary" onClick={addMovie}>Add</Button>
                 </Col>
             </Row>
             <MovieList movies={movies} onEdit={editMovie} onDelete={deleteMovie} />
